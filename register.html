@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SabiWork | Register</title>
+    <link rel="stylesheet" href="plugins/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/flaticons/css/uicons-regular-straight.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="fonts/lato-webfont/style.css">
+    <link rel="stylesheet" href="fonts/metropolis-webfont/style.css">
+    <link rel="stylesheet" href="plugins/flickity-docs/flickity-docs/flickity.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            background: url(../images/banner-image.jpg) center no-repeat;
+            background-size: cover;
+            position: relative;
+            width: 100%;
+        }
+
+        /*===================================== Sign Up Form Styles [Beginning] ==========================================*/
+        .form-wrapper {
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            width: 100%;
+            position: absolute;
+            padding: 2rem;
+        }
+
+        .whole-form {
+            width: 45rem;
+            border-radius: 5px;
+            background: #ffffff;
+            box-shadow: 15px 15px 45px #6666662a, -15px -15px 45px #6666662a;
+            padding: 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .whole-form .header-area {
+            margin: 2rem 0;
+        }
+
+        .whole-form .header-area h2 {
+            margin: 1rem 0;
+        }
+
+        .whole-form .button-box {
+            width: 22rem;
+            margin: 3.5rem auto;
+            box-shadow: 0 0 20px 9px #38ef7d1f;
+            border-radius: 2rem;
+            position: relative;
+        }
+
+        .whole-form .button-box #btn-toggler {
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 11rem;
+            height: 100%;
+            background: linear-gradient(45deg, #11998e 0%, #38ef7d 100%);
+            border-radius: 2rem;
+            transition: .5s;
+        }
+
+        .whole-form .switch-btn {
+            padding: 1rem 3rem;
+            cursor: pointer;
+            background: transparent;
+            border: 0;
+            outline: none;
+            position: relative;
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+
+        .whole-form .form-area {
+            padding: 0 2.5rem;
+        }
+
+        .whole-form .form-area input {
+            background: #ffffffe5;
+            padding: 1.7rem 3.5rem;
+            color: #353535;
+            font-size: 1.2rem;
+        }
+
+        .whole-form .form-area select {
+            color: #353535;
+            background: #ffffffe5;
+            height: 3.6rem;
+            font-size: 1.2rem;
+        }
+
+        .whole-form .form-area input::placeholder {
+            color: #353535;
+            font-size: 1.2rem;
+        }
+
+        .form-group {
+            position: relative;
+            margin-top: 2rem;
+        }
+
+        .whole-form .form-area label {
+            font-size: 1.35rem;
+        }
+
+        .input-icon {
+            color: #353535;
+            position: absolute;
+            top: 3.2rem;
+            left: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .password-toggler {
+            position: absolute;
+            right: 1.6rem;
+            bottom: .8rem;
+            font-size: 1.4rem;
+            color: #353535;
+        }
+
+        .whole-form .form-group .form-check label {
+            margin: 0 1.5rem;
+        }
+
+        .whole-form .form-btn {
+            padding: 0 2rem;
+        }
+
+        .whole-form .form-btn button {
+            padding: 1rem 0;
+            margin: 1.5rem 0;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            background: linear-gradient(45deg, #11998e 0%, #38ef7d 100%);
+            border: none;
+        }
+
+        .whole-form .other-options .other-options-text {
+            position: relative;
+        }
+
+        .whole-form .other-options .other-options-text strong {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        .whole-form .other-options .other-options-text strong::before,
+        .whole-form .other-options .other-options-text strong::after {
+            content: "";
+            position: absolute;
+            background: linear-gradient(to left, #ffffff, transparent);
+            width: 10rem;
+            height: .2rem;
+            left: 4rem;
+            top: 1rem;
+            opacity: .6;
+        }
+
+        .whole-form .other-options .other-options-text strong::after {
+            background: linear-gradient(to right, #ffffff, transparent);
+            left: 30rem;
+            top: 1rem;
+        }
+
+        .whole-form .social-options {
+            margin: 3rem auto;
+            text-align: center;
+        }
+
+        .whole-form .social-options a {
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 1.2rem;
+            box-shadow: 0 0 20px 0 #7f7f7f3d;
+            width: 3.5rem;
+            height: 3.5rem;
+            padding-top: .9rem;
+            background: linear-gradient(45deg, #11998e 0%, #38ef7d 100%);
+            transition: transform 350ms ease-in-out;
+        }
+
+        .whole-form .social-options a:hover {
+            transform: translateY(-15%);
+        }
+
+        .whole-form .social-options a i {
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        #login-form {
+            position: absolute;
+            width: 95.5%;
+            left: 50rem;
+            transition: all .5s;
+        }
+
+        #signup-form {
+            position: relative;
+            transition: all .5s;
+        }
+
+        /*===================================== Sign Up Form Styles [Ending] ==========================================*/
+    </style>
+</head>
+
+<body>
+
+    <!-------------------------------------- The Whole Form [Beginning]  ------------------------------------->
+    <section class="container-fluid form-wrapper">
+        <!-------------------------------------- Log In Form [Beginning]  ------------------------------------->
+        <!-------------------------------------- Log In Form [Ending]  ------------------------------------->
+
+        <!-------------------------------------- Sign Up Form [Beginning]  ------------------------------------->
+        <div class="container whole-form">
+            <div class="header-area">
+                <div class="text-center">
+                    <img src="images/logo.png" alt="">
+                    <h2>Create your account</h2>
+                </div>
+            </div>
+
+            <div class="button-box">
+                <div id="btn-toggler"></div>
+                <button type="button" class="switch-btn text-dark" onclick="signup()">Sign Up</button>
+                <button type="button" class="switch-btn text-dark" onclick="login()">Log In</button>
+            </div>
+
+            <form action="index.html" class="form-area" id="login-form">
+                <div class="form-group">
+                    <label for="inputName">Name / Username</label>
+                    <div class="input-icon"><i class="fa fa-user"></i></div>
+                    <input type="text" class="form-control" id="inputName" placeholder="Enter your username" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputEmail">E-mail Address</label>
+                    <div class="input-icon"><i class="fa fa-envelope"></i></div>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="address@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputPassword">Password</label>
+                    <div class="input-icon"><i class="fa fa-lock"></i></div>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Enter your password"
+                        required>
+                    <div class="password-toggler" id="password-viewer"><i class="fa fa-eye" onclick="passwordToggle()"
+                            id="eyeIcon"></i></div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="inputLog">
+                        <label class="form-check-label" for="inputLog">Keep me logged in</label>
+                    </div>
+                </div>
+
+                <div class="form-btn">
+                    <a href="index.html">
+                        <button type="submit" class="btn btn-primary col-md-12">Log in</button>
+                    </a>
+                </div>
+            </form>
+
+            <form action="index.html" class="form-area" id="signup-form">
+                <div class="form-group">
+                    <label for="inputName">Your Name</label>
+                    <div class="input-icon"><i class="fa fa-user"></i></div>
+                    <input type="text" class="form-control" id="inputName" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputEmail">E-mail Address</label>
+                    <div class="input-icon"><i class="fa fa-envelope"></i></div>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="address@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputTelephone">Phone Number</label>
+                    <div class="input-icon"><i class="fa fa-phone-alt"></i></div>
+                    <input type="tel" class="form-control" id="inputTelephone" placeholder="Enter your phone no."
+                        required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputGender">Gender</label>
+                        <select id="inputGender" class="form-control">
+                            <option selected>Select...</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Rather Not Say</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputAge">Age Range</label>
+                        <select id="inputAge" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>0-12 (Children)</option>
+                            <option>13-19 (Teenager)</option>
+                            <option>20-30 (Youth)</option>
+                            <option>31-40 (Young Adult)</option>
+                            <option>41-55 (Adult)</option>
+                            <option>56-Infinity (Elderly)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputNewPassword">Password</label>
+                    <div class="input-icon"><i class="fa fa-lock"></i></div>
+                    <input type="password" class="form-control" id="inputNewPassword" placeholder="Enter your password"
+                        required>
+                    <div class="password-toggler" id="password-viewer"><i class="fa fa-eye" onclick="passwordToggle()"
+                            id="eyeToggler"></i></div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="inputCheck" required>
+                        <label class="form-check-label" for="inputCheck">I Agree to <a href="#">Terms and
+                                Conditions</a></label>
+                    </div>
+                </div>
+
+                <div class="form-btn">
+                    <a href="index.html">
+                        <button type="submit" class="btn btn-primary col-md-12">Sign in</button>
+                    </a>
+                </div>
+            </form>
+
+            <div class="other-options my-3">
+                <div class="other-options-text text-center">
+                    <strong>Or Continue With</strong>
+                </div>
+            </div>
+
+            <div class="social-options">
+                <a href="https://google.com"><i class="fab fa-google"></i></a>
+                <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            </div>
+
+            <p class="text-center text-dark mb-5">Already have an account? <a href="#" onclick="login()">Log In</a></p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="copyright-wrap small-text text-center mt-5 text-white">
+                    <p class="mb-0">&copy; SabiWork Inc., All rights reserved</p>
+                </div>
+            </div>
+        </div>
+        <!-------------------------------------- Sign Up Form [Ending]  ------------------------------------->
+
+    </section>
+    <!-------------------------------------- The Whole Form [Ending]  ------------------------------------->
+    <script>
+        // JavaScript for the Login and SignUp Form
+var x = document.getElementById('login-form'),
+    y = document.getElementById('signup-form'),
+    z = document.getElementById('btn-toggler');
+
+function login() {
+    x.style.left = "1rem";
+    y.style.left = "-50rem";
+    z.style.left = "11rem";
+};
+
+function signup() {
+    x.style.left = "50rem";
+    y.style.left = "0";
+    z.style.left = "0";
+};
+
+// const togglePassword = document.querySelector('#password-viewer');
+// const password = document.querySelector('#inputPassword');
+
+// togglePassword.addEventListener('click', function (e) {
+//     const type = password.getAttribute('type') === 'password' ? 'text' : password.setAttribute('type', type);
+//     this.classList.toggle('fa-eye-slash');
+// });
+
+function passwordToggle() {
+    var p = document.getElementById("inputPassword"),
+        P = document.getElementById('inputNewPassword');
+
+    if (p.type === "password") {
+        p.type = "text";
+    } else {
+        p.type = "password";
+    };
+
+    if (P.type === 'password') {
+        P.type = 'text';
+    } else {
+        P.type = 'password';
+    };
+
+    var icon = document.getElementById('eyeIcon'),
+        iconSign = document.getElementById('eyeToggler'),
+        iconAccount = document.getElementById('pswIcon');
+
+    icon.classList.toggle('fa-eye-slash');
+    iconSign.classList.toggle('fa-eye-slash');
+    iconAccount.classList.toggle('fa-eye-slash')
+};
+    </script>
+    <script src="./plugins/libs/jquery-3.5.1.slim.min.js"></script>
+
+	<script src="./plugins/libs/bootstrap.bundle.min.js"></script>
+	<script src="./plugins/libs/bootstrap.min.js"></script>
+	<script src="scripts.js"></script>
+</body>
+
+</html>

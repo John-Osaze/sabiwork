@@ -1,0 +1,2995 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SabiWork | Artisans</title>
+    <link rel="stylesheet" href="plugins/flaticons/css/uicons-regular-straight.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="fonts/lato-webfont/style.css">
+    <link rel="stylesheet" href="fonts/metropolis-webfont/style.css">
+    <link rel="stylesheet" href="plugins/flickity-docs/flickity-docs/flickity.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        .nav-group ul li a {
+            color: #fff !important;
+        }
+
+        .end-tabs .navicon-link i {
+            color: #fff !important;
+        }
+
+        .nav-offset-alt {
+            background-color: #fff !important;
+            box-shadow: 0 5px 25px #11111115 !important;
+            transition: all .4s ease-in-out !important;
+        }
+
+        .nav-offset-alt .nav-group ul li a,
+        .nav-offset-alt .end-tabs .navicon-link i {
+            color: #111111 !important;
+            transition: all .4s ease-in-out !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="preloader"></div>
+
+	<header class="container nav-container">
+		<div class="menu-btn">
+			<span class="menu-toggler"></span>
+		</div>
+
+		<nav class="navbar">
+			<div class="logo">
+				<a href="index.html">
+					<img src="images/logo.png" alt="">
+				</a>
+			</div>
+
+			<div class="nav-group">
+				<ul class="menu-nav">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link">Home</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="about.html" class="nav-link">About</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="categories.html" class="nav-link">Categories</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="artisans.html" class="nav-link">Artisans</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="contact.html" class="nav-link">Contact</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="end-tabs">
+				<div class="nav-search navicon-link">
+					<div class="search-field">
+						<input type="text" placeholder="Search..." autocapitalize="on" autocomplete="on">
+						<div class="search-icon">
+							<a href="register.html#signup-form" title="Register"><i class="fi fi-rs-user-add"></i></a>
+						</div>
+
+						<div class="search-options">
+							<div class="search-title">
+								<small>Sort & filter all:</small>
+							</div>
+							<div class="search-list">
+								<ul>
+									<li><a href="#">Projects</a></li>
+									<li><a href="#">Images</a></li>
+									<li><a href="#">Prototypes</a></li>
+									<li><a href="#">People</a></li>
+									<li><a href="#">Moodboards</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="nav-user navicon-link">
+					<a href="register.html" title="Login"><i class="fi fi-rs-sign-in"></i></a>
+				</div>
+
+				<div class="nav-class navicon-link">
+					<i class="fi fi-rs-plus"></i>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+    <section class="artisan-banner" style="margin-top: 0px;">
+        <div class="banner-info">
+            <div class="info-area">
+                <h1>You fit see any artisan for here!</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id laboriosam cupiditate
+                    totam distinctio doloremque
+                </p>
+
+                <div class="banner-searcher">
+                    <input type="text" id="banner-search" placeholder="Find artisan wey e sabi work &rarr;">
+                    <a href="#"><button type="submit" class="banner-searcher">Find Artisan</button></a>
+                </div>
+
+                <div class="search-tips">
+                    <span>People don search:</span>
+                    <a href="#">Driver</a>
+                    <a href="#">Electrician</a>
+                    <a href="#">TV Repairer</a>
+                    <a href="#">Barber</a>
+                    <a href="#">Artist</a>
+                    <a href="#">Herbalist</a>
+                    <a href="#">Cleaner</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="banner-cards">
+        <div class="card-box">
+            <div class="mono-card">
+                <i class="fa fa-users"></i>
+                <h2>Contact any artisan</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa incidunt commodi quis ut
+                    reprehenderit</p>
+            </div>
+
+            <div class="mono-card">
+                <i class="fa fa-comment-alt"></i>
+                <h2>Get valid advice from them</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa incidunt commodi quis ut
+                    reprehenderit</p>
+            </div>
+
+            <div class="mono-card">
+                <i class="fa fa-share-alt"></i>
+                <h2>Share your experiences with us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa incidunt commodi quis ut
+                    reprehenderit</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="all-artisans">
+		<div class="section-title">
+			<h1>All Our <strong>Artisans</strong></h1>
+			<p class="sub-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, corporis.</p>
+		</div>
+
+		<div class="artisan-wrapper">
+			<div class="artisan-group group-a">
+                <div class="artisan-title">
+                    <input type="text" value="Artists">
+                    <button type="button" class="searcher"><i class="fi fi-rs-search"></i></button>
+                </div>
+                <div class="artisan-cards">
+                    <div class="single-card element-item most-referred">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (1).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (6).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (4).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (4).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item most-followed">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (5).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-5.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item well-known">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (2).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (21).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item most-referred">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (3).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-3.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (4).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (4).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item most-followed">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (5).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-5.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (6).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (14).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            
+			<div class="artisan-group group-b">
+                <div class="artisan-title">
+                    <input type="text" value="Barbers">
+                    <button type="button" class="searcher"><i class="fi fi-rs-search"></i></button>
+                </div>
+                <div class="artisan-cards">
+                    <div class="single-card element-item well-known">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (7).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (10).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+        
+                    <div class="single-card element-item top-rated">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (8).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-8.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item most-referred">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (9).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (8).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (10).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-10.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item most-followed">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (11).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-11.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (12).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-12.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="single-card element-item most-referred">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (9).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (8).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (10).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-10.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artisan-group group-b">
+                <div class="artisan-title">
+                    <input type="text" value="Craftsman">
+                    <button type="button" class="searcher"><i class="fi fi-rs-search"></i></button>
+                </div>
+                <div class="artisan-cards">
+                    <div class="single-card element-item well-known">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (7).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (10).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+        
+                    <div class="single-card element-item top-rated">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (8).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-8.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item most-referred">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (9).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (8).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (10).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-10.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item most-followed">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (11).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-11.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (12).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-12.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="single-card element-item most-referred">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (9).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (8).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (10).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-10.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artisan-group group-b">
+                <div class="artisan-title">
+                    <input type="text" value="Driver">
+                    <button type="button" class="searcher"><i class="fi fi-rs-search"></i></button>
+                </div>
+                <div class="artisan-cards">
+                    <div class="single-card element-item well-known">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (7).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (10).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+        
+                    <div class="single-card element-item top-rated">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (8).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-8.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item most-referred">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (9).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (8).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (10).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-10.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item most-followed">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (11).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-11.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (12).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-12.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="single-card element-item most-referred">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (9).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (8).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (10).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-10.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artisan-group group-b">
+                <div class="artisan-title">
+                    <input type="text" value="Electrician">
+                    <button type="button" class="searcher"><i class="fi fi-rs-search"></i></button>
+                </div>
+                <div class="artisan-cards">
+                    <div class="single-card element-item well-known">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (7).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (10).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+        
+                    <div class="single-card element-item top-rated">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (8).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-8.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item most-referred">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (9).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (8).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (10).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-10.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item most-followed">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (11).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-11.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (12).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-12.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="single-card element-item most-referred">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (9).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (8).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (10).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-10.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artisan-group group-b">
+                <div class="artisan-title">
+                    <input type="text" value="Furniture Man">
+                    <button type="button" class="searcher"><i class="fi fi-rs-search"></i></button>
+                </div>
+                <div class="artisan-cards">
+                    <div class="single-card element-item well-known">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (7).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (10).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+        
+                    <div class="single-card element-item top-rated">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (8).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-8.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item most-referred">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (9).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (8).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (10).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-10.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item most-followed">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (11).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-11.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (12).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-12.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="single-card element-item most-referred">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (9).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (8).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (10).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-10.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artisan-group group-b">
+                <div class="artisan-title">
+                    <input type="text" value="Glazier">
+                    <button type="button" class="searcher"><i class="fi fi-rs-search"></i></button>
+                </div>
+                <div class="artisan-cards">
+                    <div class="single-card element-item well-known">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (7).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (10).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+        
+                    <div class="single-card element-item top-rated">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (8).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-8.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item most-referred">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (9).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (8).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (10).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-10.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item most-followed">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (11).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-11.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (12).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-12.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="single-card element-item most-referred">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (9).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (8).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (10).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-10.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artisan-group group-b">
+                <div class="artisan-title">
+                    <input type="text" value="Horse Keeper">
+                    <button type="button" class="searcher"><i class="fi fi-rs-search"></i></button>
+                </div>
+                <div class="artisan-cards">
+                    <div class="single-card element-item well-known">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (7).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (10).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+        
+                    <div class="single-card element-item top-rated">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (8).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-8.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item most-referred">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (9).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (8).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (10).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-10.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item most-followed">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (11).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-11.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (12).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-12.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="single-card element-item most-referred">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (9).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (8).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (10).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-10.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artisan-group group-b">
+                <div class="artisan-title">
+                    <input type="text" value="Ice Cream Man">
+                    <button type="button" class="searcher"><i class="fi fi-rs-search"></i></button>
+                </div>
+                <div class="artisan-cards">
+                    <div class="single-card element-item well-known">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (7).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (10).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+        
+                    <div class="single-card element-item top-rated">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (8).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-8.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item most-referred">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (9).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (8).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (10).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-10.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item most-followed">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (11).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-11.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (12).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-12.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="single-card element-item most-referred">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (9).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (8).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (10).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-10.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artisan-group group-b">
+                <div class="artisan-title">
+                    <input type="text" value="Jeweller">
+                    <button type="button" class="searcher"><i class="fi fi-rs-search"></i></button>
+                </div>
+                <div class="artisan-cards">
+                    <div class="single-card element-item well-known">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (7).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (10).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+        
+                    <div class="single-card element-item top-rated">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (8).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-8.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item most-referred">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (9).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (8).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (10).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-10.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item most-followed">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (11).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-11.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (12).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-12.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="single-card element-item most-referred">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (9).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (8).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (10).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-10.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artisan-group group-b">
+                <div class="artisan-title">
+                    <input type="text" value="Keke Rider">
+                    <button type="button" class="searcher"><i class="fi fi-rs-search"></i></button>
+                </div>
+                <div class="artisan-cards">
+                    <div class="single-card element-item well-known">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (7).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (10).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+        
+                    <div class="single-card element-item top-rated">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (8).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-8.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item most-referred">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (9).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (8).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (10).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-10.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item most-followed">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (11).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-11.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (12).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-12.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="single-card element-item most-referred">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (9).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (8).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (10).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-10.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artisan-group group-b">
+                <div class="artisan-title">
+                    <input type="text" value="Laundrier">
+                    <button type="button" class="searcher"><i class="fi fi-rs-search"></i></button>
+                </div>
+                <div class="artisan-cards">
+                    <div class="single-card element-item well-known">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (7).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (10).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+        
+                    <div class="single-card element-item top-rated">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (8).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-8.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item most-referred">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (9).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (8).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (10).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-10.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item most-followed">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (11).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-11.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (12).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-12.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="single-card element-item most-referred">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (9).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile (8).jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="single-card element-item highly-paid">
+                        <a href="#">
+                            <div class="card-img-box">
+                                <img src="images/artisans (10).jpg" alt="artisan-img-1" class="card-img">
+                            </div>
+                            <div class="card-info">
+                                <div class="profile-box">
+                                    <img src="images/artisan-profile-10.jpg" alt="artisan" class="artisan-profile">
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title"><a href="#">Gassen Bajen</a></h2>
+                                    <cite>
+                                        <i class="fi fi-rs-star"> 245</i>
+                                        <i class="fi fi-rs-thumbs-up"> 131</i>
+                                    </cite>
+                                    <p class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore
+                                        asperiores explicabo omnis.
+                                    </p>
+                                    <div class="card-btns">
+                                        <a href="#"><button type="button" class="card-btn">Book Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</section>
+
+
+    <section class="page-bottom">
+        <div class="bottom-inner">
+            <div class="newsletter-box">
+                <div class="newsletter-cta">
+                    <h3>Subscribe to our newsletter <span>&amp;</span> Get daily information</h3>
+                </div>
+                <div class="newsletter-field">
+                    <div class="newsletter-input">
+                        <input type="email" name="" id="" placeholder="Enter your email">
+                        <a href="#" class="subscribe-btn">Subscribe</a>
+                    </div>
+
+                    <div class="newsletter-img">
+                        <img src="images/email-box.gif" alt="" height="150px">
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer-wrapper">
+                <div class="footer-inner">
+                    <div class="footer-col about-col" style="width: 20%;">
+                        <img src="images/logo-alt.png" alt="">
+                        <p class="about-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto sunt voluptate
+                        </p>
+
+                        <div class="social-col">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-google-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-col quick-links">
+                        <h4>Get Help</h4>
+                        <ul class="links">
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Consolidate</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col quick-links">
+                        <h4>More Info</h4>
+                        <ul class="links">
+                            <li><a href="#">Plans and Pricing</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Enter a Free Listing</a></li>
+                            <li><a href="#">Hire Artisans</a></li>
+                            <li><a href="#">Organization</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col quick-links">
+                        <h4>Legal</h4>
+                        <ul class="links">
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">Licence Agreement</a></li>
+                            <li><a href="#">Copyright Info</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <div class="contact-col">
+                            <h4>Have Questions</h4>
+                            <dl>
+                                <dd>
+                                    <i class="fi fi-rs-marker"></i>
+                                    <p class="address">53, ICE Road, Off Wire Road, Benin City</p>
+                                </dd>
+
+                                <dd>
+                                    <i class="fa fa-phone-alt"></i>
+                                    <p class="telephone">09045518744, 08125360946</p>
+                                </dd>
+
+                                <dd>
+                                    <i class="fi fi-rs-paper-plane"></i>
+                                    <p class="email">enquiries@sabiwork.com</p>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <script src="./plugins/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="./plugins/flickity-docs/flickity-docs/flickity.pkgd.min.js"></script>
+    <script src="./plugins/waypoints/jquery.waypoints.min.js"></script>
+    <script src="./plugins/counter-up/jquery.counterup.min.js"></script>
+    <script src="./plugins/icetotoes/isotope.min.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+		$(document).ready(function () {
+			$(window).on("scroll", function () {
+				if ($(window).scrollTop()) {
+					$("header").addClass("nav-offset-alt");
+					$("#logoImg").src = "./images/logo.png";
+				} else {
+					$("header").removeClass("nav-offset-alt");
+					$("#logoImg").src = "./images/logo-alt.png";
+				}
+			});
+		});
+	</script>
+</body>
+
+</html>
