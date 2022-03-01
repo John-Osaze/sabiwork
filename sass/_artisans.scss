@@ -1,0 +1,287 @@
+.artisan-banner {
+  background: url(../images/artisan-banner.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 150px 80px;
+  padding-bottom: 0;
+  text-align: center;
+  .banner-info {
+    color: $primary;
+    h1 {
+      font: normal bold 40px/45px $latobold;
+      margin-bottom: 15px;
+    }
+    p {
+      font: normal normal 16px/22px $metropolis;
+      margin-bottom: 25px;
+    }
+    .banner-searcher {
+      margin-bottom: 25px;
+      width: 87.5%;
+      input[type="text"] {
+        padding: 10px 20px;
+        border-radius: 4px 0 0 4px;
+        border: 2px solid $primary;
+        border-right: none;
+        font: normal normal 15px $lato;
+        width: 60%;
+        position: relative;
+        color: $primary;
+        background-color: transparent;
+        &::placeholder {
+          font: normal normal 15px $lato;
+          color: $primary;
+        }
+      }
+
+      a > button.banner-searcher {
+        padding: 10px 20px;
+        border: 2px solid $primary;
+        font: normal bold 13px/18px $latobold;
+        text-transform: uppercase;
+        position: absolute;
+        cursor: pointer;
+        width: auto;
+        border-radius: 0 4px 4px 0;
+        background-color: $primary;
+        color: $tertiary;
+        transition: background-color 0.15s ease;
+
+        &:hover {
+          color: $tertiary - 50;
+        }
+      }
+    }
+    .search-tips {
+      font-size: 13px;
+      span {
+        font-size: 15px;
+      }
+      a {
+        color: $borderColor;
+        background-color: transparent;
+        margin: 0 1px;
+        padding: 8px 10px;
+        border-radius: 20px;
+        border: 1px solid $borderColor;
+        transition: color, background-color 0.4s ease;
+        &:hover {
+          background-color: $borderColor;
+          color: $secondary;
+        }
+      }
+    }
+  }
+}
+
+.banner-cards {
+    position: relative;
+    z-index: 1;
+    top: -180px;
+    padding: 0 120px;
+    .card-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      .mono-card {
+        padding: 48px 30px;
+        position: relative;
+        @include flexItems(column, flex-start, flex-start, nowrap );
+        cursor: pointer;
+        z-index: 1;
+        background-color: $primary;
+        box-shadow: 10px 10px 30px #1111112a;
+        border-radius: 15px;
+        transition: transform 0.4s ease;
+        text-align: left;
+        &:hover {
+          transform: translateY(-5%);
+        }
+        i {
+          font-size: 25px;
+          color: $tertiary;
+          border: 2px solid $tertiary;
+          border-radius: 50%;
+          width: 52.5px;
+          height: 50px;
+          padding: 10px;
+        }
+        h2 {
+          font-family: $latobold;
+          color: $secondary;
+          font-size: 16px;
+          text-transform: uppercase;
+          margin: 20px 0;
+        }
+        p{
+          color: $secondary;
+          font: normal normal 14px/20px $metropolis;
+        }
+      }
+    }
+  }
+
+.all-artisans {
+  margin: 0;
+  margin-top: -60px;
+  .btn-group {
+    text-align: center;
+    margin: 0 40px;
+    button {
+      padding: 10px 10px;
+      border: none;
+      background-color: $primary;
+      position: relative;
+      // margin: 0 3px;
+      cursor: pointer;
+      text-transform: uppercase;
+      font: normal bold 14px/18px $latobold;
+
+      &.clicked {
+        border-bottom: 2px solid $tertiary;
+      }
+    }
+  }
+  .artisan-wrapper {
+    margin-top: 50px;
+    display: block;
+    width: 100%;
+
+    .artisan-group {
+      margin-bottom: 120px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+      .artisan-title {
+        margin: 0 30px;
+        // border-bottom: 2px solid $borderColor;
+        // padding: 0 150px;
+        @include flexItems(row, space-between, center, no-wrap);
+        padding: 0 7.5px;
+        position: relative;
+        input {
+          font: normal bold 30px/25px $latobold;
+          padding-bottom: 12px;
+          padding-left: 20px;
+          border: none;
+          border-bottom: 1.5px solid $borderColor;
+          width: 100%;
+          &:focus {
+            border-bottom-color: $tertiary;
+            transition: all 0.4s ease-in-out;
+          }
+        }
+        button.searcher {
+          position: absolute;
+          background-color: transparent;
+          border: none;
+          // margin-right: 20px;
+          right: 30px;
+          cursor: pointer;
+          &:hover {
+            > i {
+              color: $tertiary;
+            }
+          }
+          i {
+            font-size: 18px;
+          }
+        }
+      }
+      .artisan-cards {
+        margin-top: 20px;
+        @include flexItems(row, space-evenly, center, wrap);
+        width: 100%;
+        padding: 0 20px;
+        .single-card {
+          max-width: 300px;
+          background-color: $primary;
+          box-shadow: $shadow;
+          border-radius: 5px;
+          margin: 0 10px;
+          margin-bottom: 40px;
+          .card-info {
+            padding: 10px 15px 15px 15px;
+            position: relative;
+
+            .profile-box {
+              position: absolute;
+              img {
+                position: absolute;
+                width: 65px;
+                height: 60px;
+                border-radius: 50%;
+                z-index: 2;
+                top: -45px;
+              }
+
+              &::before {
+                content: "";
+                position: absolute;
+                width: 69px;
+                height: 32px;
+                background-color: $tertiary;
+                border-radius: 0 0 150px 150px;
+                bottom: 0;
+                left: -2px;
+                top: -15px;
+                z-index: 1;
+              }
+            }
+          }
+          .card-img-box {
+            overflow: hidden;
+            max-width: 300px;
+            min-height: 200px;
+            border-radius: 5px 5px 0 0;
+            &:hover {
+              > img {
+                transform: scale(1.1);
+              }
+            }
+            img.card-img {
+              width: 100%;
+              height: 100%;
+              border-bottom: 2px solid $tertiary;
+              transition: transform 0.4s ease;
+            }
+          }
+
+          .card-desc {
+            padding-top: 20px;
+            h2 {
+              font: normal bold 20px/25px $latobold;
+            }
+            p {
+              font: normal normal 14px/20px $metropolis;
+            }
+            cite {
+              @include flexItems(row, space-between, center, nowrap);
+              margin: 10px 0;
+              // i{
+              //   color: $tertiary;
+              // }
+            }
+            .card-btns {
+              @include flexItems(row, space-between, center, nowrap);
+              padding: 10px 0;
+              margin-top: 10px;
+              border-top: 1px solid $borderColor;
+              a > button {
+                cursor: pointer;
+                padding: 7px 12px;
+                border: 0;
+                border-radius: 3px;
+                font: normal bold 13px $latobold;
+                background-color: $tertiary;
+                color: $primary;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

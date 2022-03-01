@@ -1,0 +1,259 @@
+.about-banner {
+  background: url(../images/about-banner.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 92.5vh;
+  width: 100%;
+
+  .banner-content {
+    @include flexItems(row, space-between, center, wrap);
+    transform: translateY(16%);
+    padding: 100px 0;
+    color: $primary;
+
+    .banner-info {
+      max-width: 550px;
+      h1 {
+        font: normal bold 50px/60px $latobold;
+        margin-bottom: 20px;
+        // background: linear-gradient(to left, red, blue);
+        // background-clip: text;
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+      }
+
+      p {
+        font: normal normal 16px/22px $metropolis;
+        max-width: 500px;
+        margin-bottom: 20px;
+      }
+
+      .banner-searcher {
+        margin-bottom: 20px;
+        input[type="text"] {
+          padding: 10px 20px;
+          border-radius: 4px 0 0 4px;
+          border: 2px solid $tertiary;
+          border-right: none;
+          font: normal normal 15px $lato;
+          width: 80%;
+          position: relative;
+          color: $tertiary;
+          &::placeholder {
+            font: normal normal 15px $lato;
+            color: $tertiary;
+          }
+        }
+
+        a > button.banner-searcher {
+          padding: 10px 20px;
+          border: 2px solid $tertiary;
+          font: normal bold 13px/18px $latobold;
+          text-transform: uppercase;
+          position: absolute;
+          cursor: pointer;
+          width: auto;
+          border-radius: 0 4px 4px 0;
+          background-color: $tertiary;
+          color: $primary;
+          transition: background-color 0.15s ease;
+
+          &:hover {
+            background-color: $tertiary - 30;
+            border-color: $tertiary - 30;
+          }
+        }
+      }
+
+      .banner-btns {
+        @include flexItems(row, flex-start, center, wrap);
+
+        button#play-btn {
+          cursor: pointer;
+          padding: 12px 14px 9px 14px;
+          border-radius: 50%;
+          font-size: 25px;
+          text-align: center;
+          background-color: transparent;
+          color: $tertiary;
+          border: 2px solid $tertiary;
+          margin-left: 4px;
+          transition: all 0.4s ease;
+
+          &:hover {
+            background-color: $tertiary;
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+.about-content {
+  margin-top: 50px;
+  .about-inner {
+    text-align: center;
+    padding: 0 50px;
+    .section-title {
+      margin-bottom: 25px;
+    }
+    .about-paragraph {
+      p {
+        font: normal normal 16px/24px $metropolis;
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+.our-vision{
+  .vision-box{
+    @include flexItems(row, space-between, center, wrap);
+    margin-top: 120px;
+    padding: 0 90px;
+    .vision-img{
+      position: relative;
+      z-index: 1;
+      &::before{
+        content: "";
+        border: 16px solid $tertiary;
+        position: absolute;
+        bottom: -8.5%;
+        left: -9%;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        border-radius: 5px;
+      }
+      img{
+        width: 415px;
+        border: 18px solid $primary;
+      }
+    }
+
+    .vision-info{
+      max-width: 600px;
+      .section-title{
+        text-align: left;
+      }
+      p{
+        margin: 18px 0;
+        font: normal normal 16px/22px $metropolis;
+      }
+    }
+  }
+}
+
+.our-mission{
+  .mission-box{
+    @include flexItems(row, space-between, center, wrap);
+    margin-top: 150px;
+    padding: 0 90px;
+    .mission-img{
+      position: relative;
+      z-index: 1;
+      &::before{
+        content: "";
+        border: 16px solid $tertiary;
+        position: absolute;
+        bottom: -8.5%;
+        right: -9%;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        border-radius: 5px;
+      }
+      img{
+        width: 415px;
+        border: 18px solid $primary;
+      }
+    }
+
+    .mission-info{
+      max-width: 600px;
+      .section-title{
+        text-align: left;
+      }
+      p{
+        margin: 18px 0;
+        font: normal normal 16px/22px $metropolis;
+      }
+    }
+  }
+}
+
+.our-team {
+  margin-top: 120px;
+  .team-wrapper {
+    margin-top: 50px;
+    width: 100%;
+    @include flexItems(row, space-evenly, center, wrap);
+    .team-card {
+      max-width: 300px;
+      border-radius: 5px;
+      margin: 0 7px;
+      margin-bottom: 60px;
+      &:nth-child(9), &:nth-child(10), &:nth-child(11), &:nth-child(12){
+        margin-bottom: 0;
+      }
+
+      .card-img-box {
+        overflow: hidden;
+        max-width: 300px;
+        min-height: 200px;
+        &:hover {
+          > img {
+            transform: scale(1.1);
+          }
+        }
+        img.card-img {
+          width: 100%;
+          height: 100%;
+          transition: transform 0.4s ease;
+        }
+      }
+
+      .card-content {
+        .card-dets {
+          padding-top: 10px;
+          h2 {
+            font: normal bold 20px/25px $latobold;
+          }
+          cite {
+            font: normal bold 12px/25px $latobold;
+            margin: 10px 0;
+          }
+          p {
+            font: normal normal 14px/20px $metropolis;
+            border-top: 1.5px solid #e2e2e2;
+            margin-top: 7.5px;
+            padding: 10px 0;
+          }
+          .card-links {
+            // padding: 10px 0;
+            a {
+              display: inline-block;
+              padding: 11px 12px 12px 10px;
+              border: 0;
+              clip-path: circle();
+              background-color: #dddddd;
+              width: 40px;
+              height: 40px;
+              text-align: center;
+              color: $secondary;
+             transition: background-color .4s ease;
+
+                &:hover{
+                  background-color: $tertiary;
+                  color: $primary;
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,241 @@
+@import "./variables";
+@import "./mixins";
+
+@media screen and (max-width: 750px) {
+  .container {
+    padding: 0;
+  }
+
+  .menu-btn {
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    top: 10px;
+    height: 50%;
+    width: 12%;
+    cursor: pointer;
+    @include transitionEase();
+
+    .menu-toggler {
+      position: absolute;
+      right: 16px;
+      top: 18px;
+      width: 28px;
+      height: 2px;
+      background-color: $tertiary;
+      @include transitionEase();
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -8px;
+        width: 28px;
+        height: 2px;
+        background-color: $tertiary;
+        @include transitionEase();
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 8px;
+        width: 20px;
+        height: 2px;
+        background-color: $tertiary;
+        @include transitionEase();
+      }
+
+      &.open {
+        transform: rotate(720deg);
+        background-color: transparent;
+
+        &::before {
+          transform: rotate(45deg) translate(5px, 8px);
+        }
+
+        &::after {
+          width: 28px;
+          transform: rotate(-45deg) translate(3px, -7px);
+        }
+      }
+    }
+  }
+
+  .navbar {
+    display: block;
+    border-bottom: none;
+
+    .logo {
+      padding-left: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .nav-group {
+      display: none;
+
+      &.open {
+        display: block;
+      }
+
+      .menu-nav {
+        @include flexItems(column, center, center, wrap);
+        height: 70vh;
+        background-color: $primary;
+        @include transitionEase();
+
+        .nav-item {
+          &.selected > a {
+            color: $tertiary;
+          }
+
+          .nav-link {
+            display: inline-block;
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 20px 0;
+            font-family: $lato;
+            @include transitionEase();
+
+            &::after {
+              display: none;
+            }
+
+            &:hover {
+              color: $tertiary;
+            }
+          }
+        }
+      }
+
+      &.open {
+        transform: translateY(0);
+      }
+    }
+
+    .end-tabs {
+      height: 22.5vh;
+      position: relative;
+      width: 100%;
+      background-color: $primary;;
+      display: none;
+      @include transitionEase();
+      .navicon-link {
+        margin: 0 20px;
+        @include transitionEase();
+      }
+
+      &.open {
+        @include flexItems(row, center, center, nowrap);
+      }
+    }
+  }
+
+  // @for $i from 1 through 5 {
+  //   .nav-item:nth-child(#{$i}) {
+  //     transition-delay: ($i * 0.1s) + 0.15s;
+  //   }
+  // }
+
+  .web-banner {
+    .banner-content {
+      .info-area {
+        padding: 0 30px;
+      }
+      .banner-searcher {
+        input[type="text"] {
+          font: normal normal 15px $lato;
+          width: 65% !important;
+          &::placeholder {
+            font: normal normal 15px $lato;
+            color: $tertiary;
+          }
+        }
+
+        a > button.banner-searcher {
+          padding: 10px 13px !important;
+          font: normal bold 12.5px/18px $latobold !important;
+        }
+      }
+
+      .carousel {
+        width: 100%;
+        margin: 40px 0;
+
+        .carousel-cell {
+          width: 100%;
+          margin: 0 40px;
+        }
+
+        .flickity-page-dots {
+          @include flexItems(row, center, flex-end, nowrap);
+
+          .dot {
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+
+    .banner-bottom {
+      padding: 20px 40px;
+      .bottom-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+        margin-top: 100px;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+
+        .grid-item {
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+
+  .about-us {
+    @include flexItems(row, space-evenly, center, wrap);
+    padding: 20px 30px;
+    .about-info {
+      margin-top: 25px;
+    }
+  }
+
+  .company-stats {
+    @include flexItems(row, space-evenly, center, wrap);
+    padding: 0 10px;
+    .stat-item {
+      margin: 20px 0;
+    }
+  }
+
+  .our-services{
+    .service-info{
+      margin-top: 40px;
+    }
+  }
+
+  .why-us{
+    .info-side{
+      width: 100%;
+      padding: 20px 40px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .app-download{
+    .app-info{
+      margin-bottom: 60px;
+    }
+  }
+
+  .explore-wrapper{
+    @include flexItems(row, space-around, center, wrap);
+    
+    .explore-card{
+      margin: 30px 0;
+    }
+  }
+  
+}
+
